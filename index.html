@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="ContainerStyle.css" />
   </head>
   <body>
-    <model-viewer id="modelView" src="./Green Sofa.glb" ios-src="./Green Sofa.usdz" environment-image="neutral" shadow-intensity="0.3" ar camera-controls alt="A 3D model carousel">
+    <model-viewer id="modelView" src="./Magenta Sofa.glb" ios-src="./Magenta Sofa.usdz" environment-image="neutral" shadow-intensity="0.3" ar camera-controls alt="A 3D model carousel">
   
   <!--<button slot="ar-button" id="ar-button">
     AR
@@ -99,13 +99,13 @@
   
   
 	
-	var colorValues="Green,Red,Pink";
+	var colorValues="Magenta,Creame,Blue";
     var productName = "Sofa";
     var productInfo = "Our&nbsp;designs&nbsp;are&nbsp;inspired by&nbsp;the&nbsp;new&nbsp;generation with&nbsp;a&nbsp;classic&nbsp;touch";
 	
-	document.getElementById('button1').style.backgroundColor = colorValues.split(",")[0];
-    document.getElementById('button2').style.backgroundColor = colorValues.split(",")[1];
-    document.getElementById('button3').style.backgroundColor = colorValues.split(",")[2];
+	document.getElementById('button1').style.backgroundColor = "#864263";
+    document.getElementById('button2').style.backgroundColor = "#e7c3d5";
+    document.getElementById('button3').style.backgroundColor = "#00595d";
     
     modelViewer.src = colorValues.split(",")[0]+" "+productName+'.glb';
     modelViewer.iosSrc = colorValues.split(",")[0]+" "+productName+ '.usdz';
