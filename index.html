@@ -66,9 +66,9 @@
 	
 	<div class="slider">
      <div class="slides">
-      <button class="slide selected" id="button1" onclick="switchSrc(this,0)" style="display: inline-block; background-color: #9ACD32;"></button>
-	  <button class="slide" id="button2" onclick="switchSrc(this,1)" style="display: inline-block; background-color: #A52A2A;"></button>
-	  <button class="slide" id="button3" onclick="switchSrc(this,2)" style="display: inline-block; background-color: #BA55D3;"></button>
+      <button class="slide selected" id="button1" onclick="switchSrc(this,0)" style="display: inline-block; background-color: #864263;"></button>
+	  <button class="slide" id="button2" onclick="switchSrc(this,1)" style="display: inline-block; background-color: #e7c3d5;"></button>
+	  <button class="slide" id="button3" onclick="switchSrc(this,2)" style="display: inline-block; background-color: #00595d;"></button>
 	  
 	  </div>
   </div>
@@ -80,13 +80,7 @@
     </select><br>
   </div>-->
   
-  <!--<div id="check">    
-	<label for="show-text">Annotations</label>
-    <input id="show-text" type="checkbox">
-  </div>
   
-    <button class="Hotspot" id ="anectode" slot="hotspot-7" data-position="0m 0.46m 0m" data-normal="-0m 0m 0m"> <div id="annotation">Our&nbsp;designs&nbsp;are&nbsp;inspired by&nbsp;the&nbsp;new&nbsp;generation with&nbsp;a&nbsp;classic&nbsp;touch</div></button>-->
-    <!-- <button class="Hotspot" id ="anectode" slot="hotspot-2" data-position="0.1571773503677714m 0.34811380176846585m -0.18072995252219695m" data-normal="-0.019020629202478517m 0.08753284292171645m 0.9959800284517678m" data-visibility-attribute="visible"><div id="annotation">Brown Chair</div></button> -->
 	<div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
     </div>
@@ -95,9 +89,6 @@
 
 <script type="module">
   const modelViewer = document.querySelector("model-viewer");
-  const div = document.getElementById('annotation'); 
-  
-  
 	
 	var colorValues="Magenta,Creame,Blue";
     var productName = "Sofa";
@@ -109,21 +100,6 @@
     
     modelViewer.src = colorValues.split(",")[0]+" "+productName+'.glb';
     modelViewer.iosSrc = colorValues.split(",")[0]+" "+productName+ '.usdz';
- 	
-	<!-- document.getElementById("anectode").classList.add('hide'); -->
-	<!-- const checkbox = modelViewer.querySelector('#show-text'); -->
-    <!-- checkbox.addEventListener('change', () => { -->
-    
-      <!-- if (checkbox.checked) { -->
-         <!-- document.getElementById("anectode").classList.remove('hide'); -->
-		<!-- console.log(checkbox.checked); -->
-		
-      <!-- } else { -->
-         <!-- document.getElementById("anectode").classList.add('hide'); -->
-		<!-- console.log(checkbox.checked); -->
-      <!-- } -->
-    
-  <!-- }); -->
    
   window.switchSrc = (element, index) => {	
     
